@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Chess Vision</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="icon" href="data:;base64,=">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/css/util.css">
+	<link rel="stylesheet" type="text/css" href="static/css/main.css">
+<!--===============================================================================================-->
+	<style>
+		.my_text
+		{
+			font-size:    15px;
+			font-family: Poppins-Medium;
+		}
+	</style>
+
+</head>
+<body>
+	<audio id="move_sound" src="static/sounds/move.ogg" type="audio/ogg"></audio>
+	<audio id="illegal_sound" src="static/sounds/illegal.ogg" type="audio/ogg"></audio>
+	<audio id="newgame_sound" src="static/sounds/newgame.ogg" type="audio/ogg"></audio>
+	<audio id="draw_sound" src="static/sounds/endgame.ogg" type="audio/ogg"></audio>
+	<audio id="win_sound" src="static/sounds/win_whistle.ogg" type="audio/ogg"></audio>
+	<div class="bg-contact2" style="background-image: url('static/images/bg-01.jpg');">
+		<div class="container-contact2">
+			<div class="wrap-contact2">
+				<form class="contact2-form validate-form">
+					<div class="contact2-form-image">
+						 <img src="static/images/chess.png" width="120px" height="120px">
+					</div>
+
+					<div class="contact2-form-title">
+						Chess Vision
+					</div>
+
+					<div id = "illegal_text" class="contact2-form-sub-title">
+						Illegel
+					</div>
+
+					<div id = "whitewon_text" class="contact2-form-sub-title">
+						White Won
+					</div>
+
+					<div id = "blackwon_text" class="contact2-form-sub-title">
+						Black Won
+					</div>
+
+					<div id = "draw_text" class="contact2-form-sub-title">
+						Draw
+					</div>
+
+					<div id="board" class="my_text" style="text-align:center;" style="width: 400px">
+						Waiting for board detection
+					</div>
+
+					<div id = "engine_level" class="contact2-form-engine-level">
+						Engine Level : Waiting for detection
+					</div>
+
+					<div class="container-contact2-form-btn">
+						<div class="wrap-contact2-form-btn">
+							<div class="contact2-form-bgbtn"></div>
+							<button class="contact2-form-btn" value="Refresh Page" onClick="window.location.reload()">
+								Reset Game
+							</button>
+						</div>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+	<script src="static/js/main.js"></script>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="static/vendor/bootstrap/js/popper.js"></script>
+	<script src="static/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="static/vendor/select2/select2.min.js"></script>
+</body>
+</html>
