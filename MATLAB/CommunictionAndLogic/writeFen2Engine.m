@@ -5,6 +5,11 @@
 % Refahel Shetrit  Yaniv Okavi
 %-==========================================-
 function [llegal] = writeFen2Engine(FEN)
+% This function write the initial position detected to the python code
+% and gets a legallity feedback of the inital position (legallity loop
+% until the position is legal)
+% Input :  FEN -  Formal string represention of a position in chess
+% Output : llegal - bolean flag   
     fenFile = fopen('C:\Users\MaorA\PycharmProjects\untitled1\venv\FEN.txt','w');
     fprintf(fenFile, '%s\n', FEN);
     fclose(fenFile);
@@ -22,4 +27,3 @@ function [llegal] = writeFen2Engine(FEN)
     fclose(fenFile);
     llegal = (result == "llegal position");
 end
-

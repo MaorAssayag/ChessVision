@@ -1,3 +1,10 @@
+%-==========================================-
+% Chess Vision - Image Processing 
+% 
+% Maor Assayag     Eyal Zuckerman   
+% Refahel Shetrit  Yaniv Okavi
+%-==========================================-
+% Testing with several functions
 %img = imread('2.jpg');
 [time,n] = HandGestureDetection(hand,1);
 %%

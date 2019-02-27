@@ -1,3 +1,10 @@
+%-==========================================-
+% Chess Vision - Image Processing 
+% 
+% Maor Assayag     Eyal Zuckerman   
+% Refahel Shetrit  Yaniv Okavi
+%-==========================================-
+% Example of board represention
 board(1:8,1:8) = "*";
 % White
 board(1,1) = "rr";

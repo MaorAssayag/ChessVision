@@ -1,3 +1,10 @@
+%-==========================================-
+% Chess Vision - Image Processing 
+% 
+% Maor Assayag     Eyal Zuckerman   
+% Refahel Shetrit  Yaniv Okavi
+%-==========================================-
+% Example of FEN convertor
 %% Board intialize - starting position - default position
 board(1:8,1:8) = "*";
 %white

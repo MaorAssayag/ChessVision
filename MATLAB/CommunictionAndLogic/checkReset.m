@@ -1,5 +1,12 @@
+%-==========================================-
+% Chess Vision - Image Processing 
+% 
+% Maor Assayag     Eyal Zuckerman   
+% Refahel Shetrit  Yaniv Okavi
+%-==========================================-
 function [ResetFlag] = checkReset()
 % Wait for the engine to finish - blocking the matlab code from continution
+% until reset has been detected
 resetFile = fopen('C:\Users\MaorA\PycharmProjects\untitled1\venv\Reset.txt','r');
 tline = fgetl(resetFile);
 if (tline ~= -1)

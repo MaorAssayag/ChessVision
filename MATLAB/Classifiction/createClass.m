@@ -5,7 +5,7 @@
 % Refahel Shetrit  Yaniv Okavi
 %-==========================================-
 clear all;
-
+% Create an classifer object
 %% step 1 :  split to categories
 rootFolder = fullfile("", 'PiecesDataset'); % define output folder
 validFolder = fullfile("", 'EmptysquaresDataset'); % define output folder

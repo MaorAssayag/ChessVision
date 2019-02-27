@@ -5,6 +5,7 @@
 % Refahel Shetrit  Yaniv Okavi
 %-==========================================-
 function image  = dip_snapshot(cam)
+% This function created to improve the stabillity of the camera hardware.
     while 1
         try
             image = snapshot(cam);

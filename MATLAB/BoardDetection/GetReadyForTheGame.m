@@ -5,18 +5,16 @@
 % Refahel Shetrit  Yaniv Okavi
 %-==========================================-
 function [ img_borad,imagePoints_end,imagePoints_start,flag_rotate,flag_find ] = GetReadyForTheGame( I )
-%the function get:
-%img - [N*M*3] or [N*M]
-
-%the function return
-%img - [Q*Q*3] (Q=min{N,M}) - only the chess board
-%imagePoints_end - [49*2]   - the corrner of the squares
-
+% This function is aid function for the main code. The output is the the 
+% final board image after transformations & the points of intersections (with some stats).
+% Input : rgb or grayscale image - a snapshot of the camera, [N*M*3] or [N*M]
+% Outputs : img - extraction of the chess board in the frame [Q*Q*3] (Q=min{N,M})
+%           imagePoints_end - [49*2]   - the corrners of the squares in the
+%           chessboard
 flag_find=true;
 flag_rotate=true;
 img_borad=I;
 imagePoints_end=[0,0];
-
 [imagePoints_start,~,flag_first_detection]=GetImagePoints(I);
 %%
 if ~flag_first_detection
@@ -49,4 +47,3 @@ else
 end %~flag_first_detection
 
 end
-

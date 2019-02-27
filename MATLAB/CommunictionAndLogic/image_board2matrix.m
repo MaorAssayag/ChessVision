@@ -4,6 +4,7 @@
 % Maor Assayag     Eyal Zuckerman   
 % Refahel Shetrit  Yaniv Okavi
 %-==========================================-
+% An example of how to run classifiction on the entire initial position
 clear all
 close all
 clear('cam');

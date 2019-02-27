@@ -18,10 +18,13 @@ if (ResetFlag)
 end
 %figure();imshow(starting_point,[]);
 turn=1;
-% Board intialize - starting position - default position - refhael
+
+% Board intialize - starting position - disable feature
 % only_new_board=GetOnlyBoard(snapshot(cam),imagePoints_start,flag_rotate);
+% board(1:8,1:8) = "*";
 % for i = 1:64
 %     figure;
+%     board (i) = classify(GetSquareNum(only_new_board,i));
 %     imshow(GetSquareNum(only_new_board,i));
 % end
 

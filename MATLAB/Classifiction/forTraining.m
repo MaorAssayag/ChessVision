@@ -4,6 +4,7 @@
 % Maor Assayag     Eyal Zuckerman   
 % Refahel Shetrit  Yaniv Okavi
 %-==========================================-
+% This function helps to create a dataset
 clear all
 cam = webcam(2);
 cam.Resolution = '1280x800';

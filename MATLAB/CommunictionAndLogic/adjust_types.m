@@ -5,6 +5,8 @@
 % Refahel Shetrit  Yaniv Okavi
 %-==========================================-
 function [ category_type ] = adjust_types(board_type)
+% This function simply adjust between labling of the pieces
+% (classification) and the formal FEN represention.
 switch board_type
     case "R"
         category_type = "r";

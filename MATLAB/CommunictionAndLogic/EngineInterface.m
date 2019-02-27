@@ -1,3 +1,10 @@
+%-==========================================-
+% Chess Vision - Image Processing 
+% 
+% Maor Assayag     Eyal Zuckerman   
+% Refahel Shetrit  Yaniv Okavi
+%-==========================================-
+% Temp file, an example of how the text-based communiction works
 string1 = 'e2e4';
 userMoves = fopen('C:\Users\MaorA\PycharmProjects\untitled1\venv\RecMoves.txt','a');
 fprintf(userMoves, '%s\n', string1);

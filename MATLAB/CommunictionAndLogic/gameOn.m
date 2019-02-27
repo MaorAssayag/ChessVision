@@ -5,6 +5,9 @@
 % Refahel Shetrit  Yaniv Okavi
 %-==========================================-
 function gameOn(old_board ,cam ,imagePoints_start,flag_rotate,delay, only_old_board, pices_old_board, imagePoints_end, img_borad, turn, board, m1, m2)
+% The main function of detecting the moves of the user, legallity feedback
+% etc'. This function finsihed when the game is finished (the user pressed
+% 'RESET' in the microframework UI).
 % delay = 60
 temp_board = zeros(8,8);
 illegel_once = 0;
