@@ -1,4 +1,4 @@
-# ChessVision
+# Chess Vision
 Image Processing in MATLAB with microframework in Python
 
 more info on how to use - soon
