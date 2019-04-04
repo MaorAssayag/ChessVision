@@ -18,7 +18,7 @@
 
 #### This project contains several steps involving image-processing tools such as transformations, color spaces, segmentations etc.'   
 
-#### eywords: chess, image-processing, SURF, transformation, classification, hand-recognition  
+#### Keywords: chess, image-processing, SURF, transformation, classification, hand-recognition  
 
 ## Development frameworks
 <img src="https://github.com/MaorAssayag/ChessVision/blob/master/screenshot2.PNG" width="500">  
