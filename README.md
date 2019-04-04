@@ -2,7 +2,6 @@
 
 # Chess Vision
 ## Image Processing in MATLAB with microframework in Python
-#
 
 ### Abstract
 Throughout history chess has fascinated millions of people around the world with the complexity it presents, not only as a hobby but also as an opportunity to demonstrate creativity and improve calculated decision-making. 
@@ -21,9 +20,8 @@ This project contains several steps involving image-processing tools such as tra
 
 Keywords: chess, image-processing, SURF, transformation, classification, hand-recognition  
 
-#
 ## Development frameworks
-<img src="https://github.com/MaorAssayag/ChessVision/blob/master/screenshot2.PNG" width="500">  
+<img src="https://github.com/MaorAssayag/ChessVision/blob/master/screenshot2.png" width="500">  
 
 The image processing part (hand gestures recognition, chessboard segmentation, chess pieces classification and calibration logic) is done using MATLAB R2018 with the image-processing tool-kit.  
 
@@ -33,9 +31,8 @@ The state of the chess game is mainly tracked by the Python side, which consist 
 
 The microframework is designed using FLASK web with SocketIO which gives the Flask web application access to low latency bi-directional communications between the clients and the server – that enables us to update the local webpage with the current state of the games & mandatory visualization for the user (using jQuery that updates the HTML code of the web page).  
 
-#
 ## Microframework & Chess engine communication
-<img src="https://github.com/MaorAssayag/ChessVision/blob/master/screenshot4.PNG" width="800">  
+<img src="https://github.com/MaorAssayag/ChessVision/blob/master/screenshot4.png" width="800">  
 
 To connect an analysis of a chess engine, we need to be able to use an UCI communication protocol. In addition, we want to be able to maintain a User Interface that will be interactive and simple for providing feedback on the concurrent game played.  
 
@@ -43,9 +40,8 @@ Our approach is to maintain a microframework (simple web app) locally, communica
 
 The python code handles communicating with the chess engine, maintaining a web app with chessboard rendering, best-move suggestion and legality feedback.  
 
-#
 ## Results
-<img src="https://github.com/MaorAssayag/ChessVision/blob/master/screenshot5.PNG" width="400">  
+<img src="https://github.com/MaorAssayag/ChessVision/blob/master/screenshot5.png" width="600">  
 
 Our team felt great success at the presentation day at the project day event. We have been chosen as the second favorite project by visitors QR-voting, and the system didn't fail to surprise mentors, friends and even people who don't know chess or played slightly too-aggressively with the pieces (still accuracy was shown).  
 
@@ -53,7 +49,6 @@ The algorithm flow found to be very fast and responsive (if there is a delay in 
 
 We gained approximal 100% accuracy in the hand recognition part (determine the chess-engine skill level), 93% accuracy on piece classification, 100% on empty classification and the most important number – after all the logic layers we didn't encounter any issue with detecting the right move that was played.  
 
-#
 ## Conclusions remarks  
 
 This project gave us amazing opportunity to demonstrate creativity using the image-processing tools we learnt at class & assignments. In addition, we got to work with multi-platform code, communication protocols, microframework design, classification and much more.  
