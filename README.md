@@ -19,6 +19,7 @@
 #### This project contains several steps involving image-processing tools such as transformations, color spaces, segmentations etc.'   
 
 #### Keywords: chess, image-processing, SURF, transformation, classification, hand-recognition  
+<br/>
 
 ## Development frameworks
 <img src="https://github.com/MaorAssayag/ChessVision/blob/master/screenshot2.PNG" width="500">  
@@ -29,7 +30,9 @@
 
 #### The state of the chess game is mainly tracked by the Python side, which consist of multithreaded code that handle a microframework (web app server for visualization) thread & chess game tracking with best move suggesting feedback (and legality flags etc.') thread.   
 
-#### The microframework is designed using FLASK web with SocketIO which gives the Flask web application access to low latency bi-directional communications between the clients and the server – that enables us to update the local webpage with the current state of the games & mandatory visualization for the user (using jQuery that updates the HTML code of the web page).  
+#### The microframework is designed using FLASK web with SocketIO which gives the Flask web application access to low latency bi-directional communications between the clients and the server – that enables us to update the local webpage with the current state of the games & mandatory visualization for the user (using jQuery that updates the HTML code of the web page).   
+  
+ <br/> 
 
 ## Microframework & Chess engine communication
 <img src="https://github.com/MaorAssayag/ChessVision/blob/master/screenshot4.png" width="800">  
@@ -39,7 +42,8 @@
 #### Our approach is to maintain a microframework (simple web app) locally, communicate with the image-processing part (MATLAB) with text-file read\write based communication & tracking the chess game in Python with the help of the chess-python library. We made changes to the free open source library to fill our need best, which we will elaborate later.   
 
 #### The python code handles communicating with the chess engine, maintaining a web app with chessboard rendering, best-move suggestion and legality feedback.  
-
+  <br/>
+  
 ## Results
 <img src="https://github.com/MaorAssayag/ChessVision/blob/master/screenshot5.png" width="600">  
 
@@ -48,7 +52,8 @@
 #### The algorithm flow found to be very fast and responsive (if there is a delay in some part, is a delay we put for safety measures or best accuracy, for e.g. how much time we give the engine to think and give us a move suggestion).  
 
 #### We gained approximal 100% accuracy in the hand recognition part (determine the chess-engine skill level), 93% accuracy on piece classification, 100% on empty classification and the most important number – after all the logic layers we didn't encounter any issue with detecting the right move that was played.  
-
+  <br/>
+  
 ## Conclusions remarks  
 
 #### This project gave us amazing opportunity to demonstrate creativity using the image-processing tools we learnt at class & assignments. In addition, we got to work with multi-platform code, communication protocols, microframework design, classification and much more.  
@@ -56,14 +61,17 @@
 #### Although we feel that we achieved any pre-set goal that we have, there is always room to improvements, especially if we are thinking about generalize the chess pieces. Future work can be done to implementing ideas from research's papers about classification of 3D chess pieces (not just with the image-processing tools that we learned, and even considering deep-learning for better results).  
 
 #### In the end, we are very proud in the project and the code we wrote. The microframework part can actually be use by anyone who wants a working tool to communicate with a chess engine & have a simple UI to show the results live.  
-
+  <br/>
+  
 #
 <img src="https://github.com/MaorAssayag/ChessVision/blob/master/screenshot.PNG" width="300">   
 
 #### Full Description in English - <a href="https://github.com/MaorAssayag/ChessVision/blob/master/Chess%20Vision.pdf">link</a>
 
 #### Video on YouTube - <a href="https://www.youtube.com/watch?v=OCpOOs74qFg">link</a>
-
+  
+  <br/>
+  
 #
 ### Authors
 *Maor Assayag*  
